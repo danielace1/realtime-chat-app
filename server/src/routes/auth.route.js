@@ -2,12 +2,12 @@ import expresss from "express";
 
 const router = expresss.Router();
 
-router.post("/signup", (req, res) => {
+router.get("/signup", (req, res) => {
   // Handle user registration
   res.send("User registered");
 });
 
-router.post("/login", (req, res) => {
+router.get("/login", (req, res) => {
   // Handle user login
   res.send("User logged in");
 });
