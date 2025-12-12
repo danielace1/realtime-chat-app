@@ -1,6 +1,6 @@
 import express from "express";
-import path from "path";
 import cookieParser from "cookie-parser";
+import path from "path";
 
 import { ENV } from "./lib/env.js";
 import { connectDB } from "./lib/db.js";
