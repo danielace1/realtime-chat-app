@@ -57,6 +57,7 @@ const SignUp = () => {
                         }
                         className="input"
                         placeholder="Your Name"
+                        required
                       />
                     </div>
                   </div>
@@ -76,6 +77,7 @@ const SignUp = () => {
                         }
                         className="input"
                         placeholder="Your Email"
+                        required
                       />
                     </div>
                   </div>
@@ -95,6 +97,7 @@ const SignUp = () => {
                         }
                         className="input"
                         placeholder="Enter your Password"
+                        required
                       />
                     </div>
                   </div>
