@@ -48,7 +48,11 @@ export const getChatPartners = async (req, res) => {
 export const getMessagesByUserId = async (req, res) => {
   try {
     const myId = req.user._id;
-    const { id: userToChatId } = req.params;
+    const userToChatId = req.params.id;
+
+    if (!userToChatId) {
+      return res.status(400).json({ message: "User ID is required." });
+    }
 
     const messages = await Message.find({
       $or: [
